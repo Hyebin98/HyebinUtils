@@ -1,5 +1,5 @@
 /**
- * 获取阿里云client配置
+ * 获取阿里云client配置 需要ali-oss 插件
  * @param {Object} config 阿里云配置
  * @param {Number} timeout  超时时间, 默认为 60000
  * @returns {Promise<Client>}

@@ -15,6 +15,15 @@ export function isIE() {
 }
 
 /**
+ * 是否node环境
+ * @returns {Boolean}
+ */
+export function isNode(){
+  return typeof process !== 'undefined' && process.versions != null && process.versions.node != null;
+}
+
+
+/**
  * 是否小写
  * @param {String} str
  * @returns {Boolean}

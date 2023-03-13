@@ -63,6 +63,15 @@ export function isNumber(num) {
 }
 
 /**
+ * 是否整数
+ * @param {Number} num
+ * @returns {Boolean}
+ */
+export function isInteger(num) {
+  return typeof num === 'number' && num%1 === 0
+}
+
+/**
  * 是否字符串
  * @param {String} str
  * @returns {Boolean}

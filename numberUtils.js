@@ -44,20 +44,3 @@ export function percent(point, precision) {
   str += '%'
   return str
 }
-
-/**
- * 格式化数值
- * @param num
- * @param defaultNum
- * @returns {number}
- */
-export function numberUtil(num, defaultNum) {
-  try {
-    return Number(num)
-  } catch (e) {
-    if (defaultNum || defaultNum === 0) {
-      return defaultNum
-    }
-    throw e
-  }
-}
